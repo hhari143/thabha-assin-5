@@ -1,25 +1,36 @@
-<!-- index.html -->
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Web App</title>
-    <script src="js/script.js" defer></script>
-</head>
-<body>
-    <h1>Welcome to Our Restaurant</h1>
-    <div class="tiles">
-        <div class="tile" id="menuTile">
-            <h2>Menu</h2>
-        </div>
-        <div class="tile" id="specialsTile">
-            <h2>Specials</h2>
-        </div>
-        <div class="tile" id="mapTile">
-            <h2>Map</h2>
-        </div>
-    </div>
-</body>
-</html>
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.tile {
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
