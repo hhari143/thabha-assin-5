@@ -1,0 +1,29 @@
+/* Add your CSS styles here */
+.tiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tile {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#menu-category {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#menu-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 5px;
+}
